@@ -16,7 +16,7 @@ class UiToast {
         msg: msg,
         toastLength: Toast.LENGTH_LONG,
         gravity: ToastGravity.BOTTOM,
-        backgroundColor: Colors.blue[700],
+        backgroundColor: Colors.orange[700],
         textColor: Colors.white,
         fontSize: 14);
   }
