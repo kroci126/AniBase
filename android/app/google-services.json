@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "109796577155",
+    "project_id": "anibase-ad4aa",
+    "storage_bucket": "anibase-ad4aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:109796577155:android:d800ad22769cc0cc81b0b6",
+        "android_client_info": {
+          "package_name": "com.example.apianimetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "109796577155-1gbp576ispuv9poc17ta245dalqu09jf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.apianimetest",
+            "certificate_hash": "9b95416796c17b91de8c75fc33e382992a1a42c7"
+          }
+        },
+        {
+          "client_id": "109796577155-3p1k0ausc6lk7nfpn1sm5co4l4jjat0o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiBvp7mjWvxz_A5PHvibAI1z_saOphlig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "109796577155-3p1k0ausc6lk7nfpn1sm5co4l4jjat0o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:apianimetest/pages/pages.dart';
 import 'package:flutter/material.dart';
 
@@ -14,10 +16,19 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'AniBase',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const Home(title: 'AniBase'),
+          primarySwatch: Colors.orange,
+          textTheme: TextTheme(headline2: TextStyle(color: Colors.white))),
+      home: const SplashPage(),
     );
+  }
+}
+
+class MyHttpOverrides extends HttpOverrides {
+  @override
+  HttpClient createHttpClient(SecurityContext? context) {
+    return super.createHttpClient(context)
+      ..badCertificateCallback =
+          (X509Certificate cert, String host, int port) => true;
   }
 }
 

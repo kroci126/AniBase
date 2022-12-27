@@ -1,21 +1,21 @@
 part of 'pages.dart';
 
-class Home extends StatefulWidget {
-  const Home({Key? key, required String title}) : super(key: key);
+class Seasonal extends StatefulWidget {
+  const Seasonal({Key? key}) : super(key: key);
 
   @override
-  _HomeState createState() => _HomeState();
+  _SeasonalState createState() => _SeasonalState();
 }
 
-class _HomeState extends State<Home> {
-  late final future = getTopAnime();
+class _SeasonalState extends State<Seasonal> {
+  late final future = getRecommendedAnime();
 
   @override
   Widget build(BuildContext context) {
     HttpOverrides.global = MyHttpOverrides();
     return Scaffold(
         appBar: AppBar(
-          title: Text("Top Anime"),
+          title: Text("Anime This Season"),
           titleTextStyle: TextStyle(color: Colors.white, fontSize: 24),
           centerTitle: true,
         ),
@@ -47,7 +47,7 @@ class _HomeState extends State<Home> {
                         SizedBox(
                           height: 20,
                         ),
-                        Text("$modelRank" + ". " + "$modelTitle"),
+                        Text(modelTitle),
                       ]),
                     ),
                   );
